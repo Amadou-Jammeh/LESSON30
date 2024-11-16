@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVITY1</title>
+</head>
+<body>
+    <h2> Form Validation</h2>
+    <form name="myfrom" onsumbit="validateForm()">
+        name : <input type="textbox" name="fname"><br><br>
+        <input type="submit" value="submit from">
+
+    </form>
+    <script>
+        function validateForm(){
+            x=document.forms["myform"]["fname"].value;
+            if(x==""){
+                alert("please enter name!");
+                return false;
+            }
+        }
+    </script>
+    
+</body>
+</html>
